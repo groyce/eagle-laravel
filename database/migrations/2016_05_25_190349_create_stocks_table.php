@@ -24,7 +24,7 @@ class CreateStocksTable extends Migration
         });
 
         Schema::table('stocks', function (Blueprint $table) {
-           $table->foreign('customer_id')->references('id')->on('customer')->onDelete('cascade');
+           $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
         });
     }
 
