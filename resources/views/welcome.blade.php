@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lincoln</title>
+        <title>Eagle Financial</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -38,7 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Lincoln Financial Services</div>
+                <div class="title">Eagle Financial Services</div>
+                <a href="{{url('customers')}}" class="btn btn-primary"><h1>Begin Here</h1></a>
             </div>
         </div>
     </body>

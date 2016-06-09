@@ -66,5 +66,19 @@ class CustomerController extends Controller
         Customer::find($id)->delete();
         return redirect('customers');
     }
+
+    public function stringify($id)
+    {
+       // $customer=Customer::where('id', $id)->select('customer_id','name','address','city','state','zip','home_phone','cell_phone')->first();
+        $customer = Customer::where('customer_id', $id)->select('customer_id','name','address','city','state','zip','home_phone','cell_phone')->first();
+
+        $customer = $customer->toArray();
+        return response()->json($customer);
+    }
+
+
+
+
+
 }
 
