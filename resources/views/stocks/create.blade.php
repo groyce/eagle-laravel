@@ -3,10 +3,6 @@
     <h1>Create New Stock</h1>
     {!! Form::open(['url' => 'stocks']) !!}
 
-    {{--<div class="form-group">--}}
-        {{--{!! Form::label('customer_id', 'Cust_id:') !!}--}}
-        {{--{!! Form::text('customer_id',null,['class'=>'form-control']) !!}--}}
-    {{--</div>--}}
 
     <div class="form-group">
         {!! Form::select('customer_id', $customers) !!}
